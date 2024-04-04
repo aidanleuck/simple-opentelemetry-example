@@ -6,9 +6,9 @@ import io.opentelemetry.api.metrics.Meter;
 import io.opentelemetry.sdk.autoconfigure.AutoConfiguredOpenTelemetrySdk;
 
 public class OpenTelemetryApp {
-    private OpenTelemetry openTelemetrySDK;
-    private Meter meter;
-    private LongUpDownCounter counter;
+    private final OpenTelemetry openTelemetrySDK;
+    private final Meter meter;
+    private final LongUpDownCounter counter;
     private final String INSTRUMENTATION_NAME = "test-recorder";
 
     // Initialize SDK and counters we are interested in. Unfortunately

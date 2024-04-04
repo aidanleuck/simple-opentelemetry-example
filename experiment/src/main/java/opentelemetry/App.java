@@ -9,7 +9,7 @@ import io.opentelemetry.api.OpenTelemetry;
 public class App 
 {
     private static App app;
-    private ExtensionList extensionList;
+    private final ExtensionList extensionList;
     private static final Object lock = new Object();
 
     private App(){

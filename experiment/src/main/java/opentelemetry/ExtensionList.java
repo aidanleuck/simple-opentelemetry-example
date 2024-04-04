@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 // Simple mock ExtensionList class
 public class ExtensionList {
-    private List<Object> extensionList;
+    private final List<Object> extensionList;
 
     protected ExtensionList(){
         extensionList = new ArrayList<>();
